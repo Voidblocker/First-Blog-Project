@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="main" class="s-content__main large-8 column">    
+        <form action="#" method="POST">
+            {% csrf_token %}
+            {{ post }}
+        </form>
